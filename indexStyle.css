@@ -1,0 +1,683 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: whitesmoke;
+}
+.flightBook {
+    width: 100vw;
+    height: 80vh;
+    background-color: rgb(0, 29, 63);
+    padding: 50px;
+}
+#slideIcon{
+    position: relative;
+    bottom: 70px;
+}
+
+.heading p {
+    margin-left: 10px; /* Adds some space between the image and the text */
+    color: white; /* Optional: to make text visible on a dark background */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 70px;
+    margin-top: -4%;
+}
+#loginIcon{
+    margin-top: -5px;
+}
+#loginIcon1{
+    color: aliceblue;
+    margin-left: 74vw;
+    font-size: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    position: relative;
+    top: 27px;
+}
+#loginIcon1 i{
+    color: white;
+    font-size: 25px;
+}
+#loginIcon1:hover{
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, color 0.9s ease;
+}
+
+#loginText{
+    color: white;
+    font-size: 20px;
+    margin-left: 5px;
+    text-decoration: none;
+    position: relative;
+    bottom: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#heart{
+    color: rgb(255, 255, 255);
+    margin-left: 71vw;
+    margin-top: -29px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    /* transition: background-color 0.4s ease, color 0.1s ease; */
+    background-color: transparent; 
+    position: relative;
+    top: 2px;
+    right: 10px;
+    
+}
+
+#heart i{
+    width: 20px;
+    height: 20px;
+    color: white;
+
+    font-size: 25px;
+}
+#heart:hover{
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, color 0.9s ease;
+}
+
+#globe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 67vw;
+    margin-top: -6.2vh;
+    /* transition: background-color 0.4s ease, color 0.3s ease; */
+    background-color: transparent; 
+    position: relative;
+}
+
+
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 15px;
+    bottom: 10px;
+    color: white;
+    margin-left: 83.5vw;
+    font-size: 25px;
+    z-index: 1;
+    margin-top: -5vh;
+    width: 40px;
+    height: 40px;
+}
+#menu i{
+    color: white;
+}
+
+#menu:hover{
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px ;
+    transition: background-color 0.3s ease-in-out, color 0.9s ease;
+}
+#slideIcon{
+    position: relative;
+    left: 50px;
+}
+
+#globe i{
+    width: 20px;
+    height: 20px;
+    color: white;
+
+    font-size: 25px;
+}
+
+#globe:hover{
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, color 0.9s ease;
+}
+
+#flight1{
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    padding: 10px 10px;
+    color: aliceblue;
+    /* border: 1px solid white;  */
+    /* background-color: rgb(0, 101, 233); */
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+}
+#flight1 a{
+    text-decoration: none;
+    color: white;
+}
+
+#threeIcoms{
+    display: flex;
+    position: relative;
+    bottom: 30px;
+}
+.f0{
+    /* margin-left: 20px; */
+    background-color: rgb(0, 101, 233);
+    
+}
+.f1,.f2{
+    border: 1px solid white;
+    margin-left: 1vw;
+    transition: tran 1s ease-in-out;
+}
+
+.f0:hover{
+    background-color: rgba(48, 48, 48, 0.785);
+    border: 1px solid white;
+    transition: background-color 0.5s ease-in-out, color 0.9s ease;
+    
+}
+.f1:hover,.f2:hover{
+    background-color: rgb(233, 0, 140);
+    border: none;
+    transition: background-color 0.5s ease-in-out, color 0.9s ease;
+    transition-property: all;
+}
+
+#million{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+}
+#box1{
+    background-color: white;
+    width: 17%;
+    height: 5.1vw;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-left: 4px solid rgb(0, 29, 63);
+    
+}
+#box2,#box3,#box4{
+    background-color: white;
+    width: 17%;
+    height: 5.1vw;
+    border-left: 4px solid rgb(0, 29, 63);
+}
+#box5{
+    background-color: white;
+    width: 17%;
+    height: 5.1vw;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: 4px solid rgb(0, 29, 63);
+}
+#boxContainer{
+    display:flex;
+    position: relative;
+    top: 30px;
+}
+#box1::before{
+    content: "From";
+    width: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 20px;
+    display: flex;
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
+#selectPlace,#toPlace{
+    width: 30px;
+    height: 50px;
+    margin-left: 30px;
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    /* text-align: center; */
+}
+#selectPlace1 ,#toPlace1{
+    width: 13vw;
+    height: 5vh;
+    margin-left: 20px;
+    margin-top: 3px;
+    padding-top: .3vh;
+}
+#selectPlace1:hover ,#toPlace1:hover{
+    box-shadow: 2px 2px 10px 2px gray;
+    transition: color,box-shadow .4s ease-in-out;
+    color: tomato;
+    border-radius: 10px;
+}
+#list1,#list2{
+    /* transition: background-color 4s ease-in; */
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 1px 5px 10px 1px rgba(0, 27, 115, 0.171);
+    display: block;
+    text-align: center;
+}
+#list1 p,#list2 p{
+    display: none;
+    padding-bottom: 9px;
+    padding-top: 9px;
+}
+#list1 p:hover,#list2 p:hover{
+    background-color: rgba(56, 56, 56, 0.276);
+    color: rgb(255, 0, 140);
+}
+
+#box2::before{
+    content: "To";
+    width: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 20px;
+    display: flex;
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
+
+#box3::before{
+    content: "Depart";
+    width: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 20px;
+    display: flex;
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
+.date1{
+    background-color: rgba(5, 5, 86, 0.349);
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+.date1 :active{
+    border: none;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.date1::after{
+    background-color: aqua;
+}
+.date-container{
+    margin-left: 2vw;
+    margin-top: 3px;
+    width: 200px;
+}
+
+#box4::before{
+    content: "Return";
+    width: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 20px;
+    display: flex;
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
+#box5::before{
+    content: "Number Of Travellers";
+    width: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 20px;
+    display: flex;
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
+#nofly{
+    margin-left: 120px;
+    margin-top: -14px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#nofly input{
+    width: 50px;
+    border: none;
+    appearance: none;
+    padding: 5px;
+    padding-left: 10px;
+    font-weight: bolder;
+    border-radius: 10px;
+    text-align:left;
+}
+#box6{
+    margin-left: 10px;
+    color: aliceblue;
+}
+
+#box6 button{
+    width: 6vw;
+    min-height: 10vh;
+    border-radius: 10px;
+    background-color: rgb(37, 132, 255);
+    font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight : bold;
+    color: aliceblue;
+    box-shadow: 1px 1px 1px 1px rgba(105, 105, 105, 0.498);
+}
+
+#box6 button:hover{
+    background-color: rgba(255, 0, 0, 0.066);
+    border: 2px solid rgb(3, 236, 77);
+}
+#box6 button:active{
+    background-color: rgba(0, 217, 255, 0.203);
+    transform: scale(1.04);
+}
+#c1{
+    color: aliceblue;
+    margin-top: 65px;
+    display: flex;
+    width: 500px;
+    margin-left: 5px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#c1 div{
+    padding-right: 30px;
+}
+
+#c1 div input{
+    color: aqua;
+}
+
+input[type = "checkbox"]{
+    width: 20px;
+    color: aqua;
+}
+#c13{
+    padding-top: 15px;
+}
+#explreWorld button{
+    width: 18vw;
+    height: 8vh;
+    background-color: rgb(0, 29, 63);
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 1vw;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#explreWorld button:hover{
+    background-color: rgba(0, 29, 63, 0.811);
+    width: 240px;
+    color: turquoise;
+}
+
+#explreWorld button:active{
+    /* background-color: rgb(0, 29, 63); */
+    background-color: teal;
+}
+
+#exploreIcons{
+    margin-top: 50px;
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+    justify-content: space-between;
+}
+
+#iconE{
+    margin-right: 15px;
+}
+
+#beachImage {
+    width: 100%;
+    max-width: 1190px;
+    max-height: 700px;
+    height: 500px; /* Define a fixed height if necessary */
+    overflow: hidden;
+    margin-left: 140px;
+    margin-top: 50px;
+}
+
+#beachImage img {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover; /* Scales the image to cover the container */
+    display: block;
+    border-radius: 10px;
+}
+
+#beachImage img:hover{
+    filter: grayscale(.5);
+    transform: scale(1.03);
+    border-radius: 50px;
+}
+#panTrip button{
+    z-index: 2;
+    width: 150px;
+    height: 40px;
+    margin-left: 800px;
+    position: relative;
+    bottom: 350px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+#panTrip button:hover{
+    background-color: rgba(128, 128, 128, 0.251);
+    border: 3px solid rgba(255, 255, 255, 0.45);
+    color: aliceblue;
+}
+#panTrip p{
+    position: relative;
+    left: 800px;
+    width: 500px;
+    bottom: 380px;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+#footer1{
+    width: 100%;
+    background-color: rgb(0, 29, 63);
+    color: white;
+    height: 10vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 430px;
+    padding-right: 430px;
+}
+
+input,button,label,#list1,#list2{
+    cursor: pointer;
+}
+
+
+#b122{
+    display: none;
+}
+
+#b1{
+    width: 100vw;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.653);
+    display: flex;
+    justify-content: center;
+    padding-top: 8%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+#backGround{
+    width: 30vw;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 3px gray;
+}
+#x{
+    float:right;
+    margin-right: 2vw;
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+#x:hover{
+    background-color: rgba(66, 66, 66, 0.523);
+}
+#velA{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+
+}
+
+#log1{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+#inputs input{
+    width: 70%;
+    border: 2px solid black;
+    height: 5vh;
+    padding-left: 20px;
+    margin-top: 20px;
+
+}
+#log{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#log button{
+    width: 200px;
+    height: 40px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+}
+#log button:hover{
+    background-color: transparent;
+    border: 2px solid black;
+    color: red;
+}
+#rem{
+    margin-left: 60px;
+    margin-top: 15px;
+}
+#fot{
+    padding-left: 55px;
+    padding-right: 40px;
+}
+
+#w2{
+    padding-left: 20px;
+}
+#w1,#w2{
+    color: white;
+}
+#way{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-shrink: 0;   
+}
+
+#back12{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.174);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#cabinSelector{
+    background: rgb(92,243,245);
+background: linear-gradient(0deg, rgba(92,243,245,1) 0%, rgba(182,146,66,1) 100%);
+    text-align: center;
+    width: 30vw;
+    height: 20vh;
+    border: 1px solid black;
+}
+#form2{
+    flex-wrap: wrap;
+    font-size: 20px;
+    justify-content: space-between;
+}
+#selectClass{
+    font-size: 30px;
+    /* margin-top: -25px; */
+    margin-bottom: 20px;
+}
+#cl1{
+    display: flex;
+    justify-content: space-evenly;
+}
+#btn{
+    margin-top: 20px;
+}
+
+#btn button{
+    background-color: brown;
+    width: 7vw;
+    height: 4vh;
+    border: none;
+    color: aliceblue;
+    border-radius:10px ;
+}
+#selcClass{
+    display: none;
+    width: 100vw;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.653);
+    /* padding-top: %; */
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}

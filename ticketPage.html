@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Ticket Booking</title>
+    <link rel="stylesheet" href="ticketPagecss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div id="TicketFullBackground">
+        <div id="TicketBackground">
+            <div id="vlrAir">
+                <i class="fa-solid fa-plane"></i>
+                <span>VELLORE AIR LINES</span>
+            </div>
+            <div id="tickeConfirm">
+                <div><i class="fa-solid fa-ticket"></i> 
+                <span>TCKET CONFIRMATION</span></div>
+            </div>
+            <div id="FromTo">
+                <p>From : <span id="from">Chennai</span></p>
+                <i class="fa-brands fa-fly" id="fly"></i>
+                <p>To : <span id="to">Vellore</span></p>
+            </div>
+            <div id="selClass">
+                <p>Selected Class : <span id="class1">First</span></p>
+            </div>
+            <div id="ticketPr">
+                <p>Number Of Tickets : <span id="count">0</span></p>
+                <p>Amount To Be Paid : <span id="amount">0</span></p>
+            </div>
+            <footer>
+                <p id="foot">Note : Amount Should Be Paid In Lobby</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        let from = document.querySelector('#from')
+        let to = document.querySelector('#to')
+        from.textContent = localStorage.getItem('From')
+        to.textContent = localStorage.getItem('To')
+        let class1 = document.querySelector("#class1")
+        class1.textContent = localStorage.getItem("selectedClass")
+        let count = document.querySelector('#count')
+        let amount = document.querySelector('#amount')
+        count.textContent = localStorage.getItem('count')
+        amount.innerHTML = localStorage.getItem('Amount')
+    </script>
+
+</body>
+</html>
