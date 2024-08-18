@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Ticket Booking</title>
+    <link rel="stylesheet" href="indexStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="flightBook">
+        <div class="heading">
+            <img src="flighticon.png" alt="flight" width="60" id="flightIcon">
+            <p id="velloreAir">Vellore Air Lines</p>
+            <div id="slideIcon">
+                <div id="loginIcon1">
+                    <i class="fa-solid fa-right-to-bracket" id="loginIcon"></i>
+                    <label for="loginIcon1" id="loginText">LOG IN</label>
+                </div>
+                <div id="heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div id="globe">
+                    <i class='fas fa-globe-americas'></i>
+                </div>                
+                <div id="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="threeIcoms">
+            <div id="flight1" class="f0">
+                <i class="fa fa-plane"></i>
+                <label for=""><a href="">Flights</a></label>
+            </div>
+            <div id="flight1" class="f1">
+                <i class="fa-solid fa-hotel"></i></i>
+                <label for=""><a href="">Hotels</a></label>
+            </div>
+            <div id="flight1" class="f2">
+                <i class='fas fa-car'></i>
+                <label for=""><a href="">Car Hire</a></label>
+            </div>
+        </div>
+        <div id="million">
+            <p>Millions of cheap flights. One simple search.</p>
+        </div>
+
+
+
+
+
+       <form action="" method="post" onsubmit="nextSelection(event)">
+            <div id="way">
+                <div id="w1">
+                    <input type="radio" class="w11" name="trip" id="oneWay">
+                    <label for="oneWay">One Way Trip</label>
+                </div>
+                <div id="w2">
+                    <input type="radio" class="w12"   name="trip" id="toWay">
+                    <label for="toWay">Two Way Trip(Default)</label>
+                </div>
+            </div>
+        <div id="boxContainer">
+            <div id="box1">
+                <div id="selectPlace1">
+                    <label for="" id="selectPlace" onclick="selPlc()">Take Of Place</label>
+                </div>
+                 <div id="list1"></div>
+            </div>
+            <div id="box2">
+                <div id="toPlace1">
+                    <label for="" id="toPlace"  onclick="toPlc()">Landing Place</label>
+                </div>
+                <div id="list2"></div>
+            </div>
+            <div id="box3">
+                <div class="date-container">
+                    <input type="date" min="2024-08-22" class="date1" required>
+                </div>
+            </div>
+            <div id="box4">
+                <div class="date-container">
+                    <input type="date" min="2024-08-22" class="date1">
+                </div>
+            </div>
+            <div id="box5">
+                <div id="nofly">
+                    <label for="">ADULT : </label>
+                <input type="number" required>
+                <label for="">CHILD : </label>
+                <input type="number" required>   
+                </div>
+            </div>
+            <div id="box6">
+                <button id="search">SEARCH</button>
+            </div>
+        </div>
+        <div id="c1">
+            <div id="c11">
+                <input type="checkbox" id="cw1">
+                <label for="cw1">Add nearby airports</label>
+            </div>
+            <div id="c12">
+                <input type="checkbox" id="cw2">
+                <label for="cw2">Add nearby airports</label>
+            </div>
+            <div id="c13">
+                <input type="checkbox" id="cw3">
+                <label for="cw3">Direct flights</label>
+            </div>
+        </div>
+       </form>
+    </div>
+    <div id="exploreIcons">
+        <div id="explreWorld">
+            <button><i class='fas fa-map-marked-alt' id="iconE"></i><label for="">Explore everywhere</label></button>
+        </div>
+        <div id="explreWorld">
+            <button><i class='fas fa-umbrella-beach' id="iconE"></i><label for="">Travel news</label></button>
+        </div>
+        <div id="explreWorld">
+            <button><i class="fa-solid fa-hotel" id="iconE"></i><label for="">Hotels</label></button>
+        </div>
+        <div id="explreWorld">
+            <button><i class="fa-solid fa-van-shuttle" id="iconE"></i><label for="">Car hire</label></button>
+        </div>
+    </div>
+    <div id="beachImage">
+        <img src="beach.jpg" alt="">
+    </div>
+    <div>
+        <div id="panTrip">
+            <p>The best time to book for summer
+                Use our tool to discover the cheapest time to book your summer trip !!!</p>
+            <button>Plan Trip</button>
+        </div>
+    </div>
+    <div>
+        <footer id="footer1">
+            <span>Designed By VIT STUDENTS - VELLORE</span>
+            <span>© Copyright, Claimed By VIT Students @2024</span>
+        </footer>
+    </div>
+
+
+    <div id="b122">
+        <div id="b1">
+            <div id="backGround">
+                <div id="x"><span>&#10005;</span></div>
+                <div id="velA">Vellore Air Lines</div>
+    
+                <div id="log1">
+                    <label for="">LOG IN</label>
+                </div>
+    
+                <form action="">
+                    <div id="inputs">
+                        <input type="text" placeholder="Phone Number" required maxlength="10" minlength="10">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div id="log">
+                        <button type="submit" id="logB">LOGIN</button>
+                    </div>
+                    <input type="checkbox" id="rem" required>
+                    <label for="rem">Remember Me</label>
+                </form>
+    
+                <footer id="fot">
+                    <p>By Continuing you to our <a href="">Terms service</a> and
+                    <a href="">Privacy Policy</a></p>
+                </footer>
+    
+            </div>
+        </div>
+    </div>
+
+    <div id="selcClass">
+        <div id="back12">   
+            <div id="cabinSelector">
+                <div id="selectClass">
+                    <p>Select The Class</p>
+                </div>
+                <form id="form2">
+                    <div id="cl1">
+                        <div id="fc">
+                            <input type="radio" required id="First-Class" name="fclass1" value="First-Class">
+                            <label for="First-Class">First-Class</label>
+                        </div>
+                        <div id="sc">
+                            <input type="radio" name="fclass1" id="Second-class" required value="Second-class">
+                            <label for="Second-class">Second-class</label>
+                        </div>
+                        <div id="tc">
+                            <input type="radio" name="fclass1" id="Third-class" required value="Third-class">
+                            <label for="Third-class">Third-class</label>
+                        </div>
+                    </div>
+                    <div id="btn">
+                        <button type="button" onclick="saveSelection(event)">Go</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+    </div>
+    <script src="indexJS.js">
+    </script>
+</body>
+</html>

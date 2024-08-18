@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Ticket Booking</title>
+    <link rel="stylesheet" href="one1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div id="seatBackground">
+        <div  id="SeatContainer">
+            <div id="headingContainer">
+                <span id="bookingClass"></span> 
+            </div>
+            <div id="textTicketBookingDiv">
+                <p id="textTicketBooking">Ticket Booking</p>
+            </div>
+            <div id="FromToDiv">
+                <div>
+                    <p>From : <span id="from"></span></p>
+                </div>
+                <div id="flightIcon">
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+                <div>
+                    <p>To : <span id="to"></span></p>
+                </div>
+            </div>
+            <div id="seatsContent">
+                <div class="all-seats">
+                    <input type="checkbox" name="tickets" id="s1" />
+                    <label for="s1" class="seat booked"></label>
+                  </div>
+            </div>
+
+            <div id="ticketCounter">
+                <div>
+                    <p>Ticket Count : <span class="count">0</span></p>
+                </div>
+                <div>
+                    <p>Ticket Price : <span class="amount">0</span></p>
+                </div>
+            </div>
+
+            <div id="bookTicket">
+                <button id="btnBT" onclick="TicketPage(event)">BOOK TICKET</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let bookingClass = document.querySelector("#bookingClass")
+        let selectedClass = localStorage.getItem('selectedClass')
+        bookingClass.innerHTML = selectedClass
+        let seatsContent = document.querySelector(".seatsContent")
+
+        let seats = document.querySelector(".all-seats");
+      for (var i = 0; i < 59; i++) {
+        let randint = Math.floor(Math.random() * 2);
+        let booked = randint === 1 ? "booked" : "";
+        seats.insertAdjacentHTML(
+          "beforeend",
+          '<input type="checkbox" name="tickets" id="s' +
+            (i + 2) +
+            '" /><label for="s' +
+            (i + 2) +
+            '" class="seat ' +
+            booked +
+            '"></label>'
+        );
+      }
+
+      let from = document.querySelector("#from")
+      let to = document.querySelector("#to")
+
+      from.innerHTML = localStorage.getItem('From')
+      to.innerHTML = localStorage.getItem('To')
+
+      let tickets = seats.querySelectorAll("input");
+      tickets.forEach((ticket) => {
+        ticket.addEventListener("change", () => {
+          let amount = document.querySelector(".amount").innerHTML;
+          let count = document.querySelector(".count").innerHTML;
+          amount = Number(amount);
+          count = Number(count);
+
+          if (ticket.checked) {
+            count += 1;
+            amount += 200;
+          } else {
+            count -= 1;
+            amount -= 200;
+          }
+          document.querySelector(".amount").innerHTML = amount;
+          localStorage.setItem('Amount',amount)
+          localStorage.setItem('count',count)
+          document.querySelector(".count").innerHTML = count;
+        });
+      });
+
+      function TicketPage(event){
+        event.preventDefault()
+        window.location.href = "ticketPage.html"
+      }
+        
+    </script>
+</body>
+</html>
